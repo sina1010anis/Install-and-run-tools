@@ -28,7 +28,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-
         $this->app->singleton(ObjectIntrface::class,function (){
             return new Object_2('1221211212');
         });
@@ -37,5 +36,6 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
             $this->app->register(TelescopeServiceProvider::class);
         }
+
     }
 }

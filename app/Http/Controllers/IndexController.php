@@ -13,6 +13,9 @@ use ProtoneMedia\LaravelCrossEloquentSearch\Search;
 
 class IndexController extends Controller
 {
+    public function test_2(){
+        return User::whereIn('id' , [1,2])->get();
+    }
     public function index(ObjectIntrface $objectIntrface){
         return $objectIntrface->fn();
         // $users = app(Pipeline::class)

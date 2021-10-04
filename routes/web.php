@@ -14,11 +14,13 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/', function (){
-    return \Inertia\Inertia::render('editor') ;
+    return '<a href="/register">Register</a>';
+    //return \Inertia\Inertia::render('editor') ;
 });
 Route::get('/test', function (){
     return \Inertia\Inertia::render('Textedit') ;
 });
+Route::get('/test_2', [IndexController::class , 'test_2']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
