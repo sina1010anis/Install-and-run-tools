@@ -1,7 +1,7 @@
 <template>
     <min>
-        <header>
-            <Link href="/test">send</Link>
+        <header class="boxer">
+<!--            <Link class="test" href="/test">send</Link>-->
         </header>
     </min>
 </template>
@@ -12,6 +12,11 @@ export default {
     name: "editor",
     components:{
         Link
+    },
+    mounted() {
+        setTimeout(()=>{
+            $('.boxer').html(`<button class="test">send</button>`)
+        } , 3000)
     }
 }
 </script>

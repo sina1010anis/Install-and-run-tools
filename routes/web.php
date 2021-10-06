@@ -13,10 +13,7 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-Route::get('/', function (){
-    return '<a href="/register">Register</a>';
-    //return \Inertia\Inertia::render('editor') ;
-});
+Route::get('/', [IndexController::class , 'test']);
 Route::get('/test', function (){
     return \Inertia\Inertia::render('Textedit') ;
 });
