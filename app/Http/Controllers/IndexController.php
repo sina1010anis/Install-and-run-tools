@@ -16,6 +16,8 @@ use ProtoneMedia\LaravelCrossEloquentSearch\Search;
 class IndexController extends Controller
 {
     public function test(Object_1 $object_1){
+        //return view('welcome');
+        //return $object_1->fn();
         return Inertia::render('editor');
     }
 

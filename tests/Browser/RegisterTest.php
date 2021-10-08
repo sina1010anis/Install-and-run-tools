@@ -18,8 +18,10 @@ class RegisterTest extends DuskTestCase
     {
         $this->browse(function ($browser , $second) {
             $browser->visit('/')
-                ->pause(3000)
-                ->click('.test');
+            //->assertVueContains('name','sina','@editor');
+            ->assertVue('name','sina','@editor');
+                // ->pause(3000)
+                // ->click('.test');
                 // ->assertSee('Register')
                 // ->value('#name' , 'sina')
                 // ->value('#email' , Str::random(10).'@gmail.com')

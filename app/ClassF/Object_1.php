@@ -6,8 +6,8 @@ class Object_1 implements ObjectIntrface{
 
     use tir;
 
-    public function fn(){
-        return 'Object_1';
+    public function fn() : int {
+        return 51;
     }
 
 }

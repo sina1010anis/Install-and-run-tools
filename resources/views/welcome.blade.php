@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="app">
-            <editor></editor>
+            <editor dusk="editor"></editor>
         </div>
     </body>
 </html>
