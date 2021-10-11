@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ClassF\Object_1;
 use App\ClassF\ObjectIntrface;
+use App\Events\WebSocket;
 use App\Filters\NameFilter;
 use App\Models\image_product;
 use App\Models\User;
@@ -18,7 +19,9 @@ class IndexController extends Controller
     public function test(Object_1 $object_1){
         //return view('welcome');
         //return $object_1->fn();
-        return Inertia::render('editor');
+        broadcast(new WebSocket('som data'));
+        //return Inertia::render('editor');
+        return view('welcome');
     }
 
     public function test_2(){

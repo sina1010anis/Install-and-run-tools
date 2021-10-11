@@ -29,6 +29,8 @@
         "@inertiajs/inertia-vue3": "^0.5.2",
         "@inertiajs/progress": "^0.2.6",
         "@vue/compiler-sfc": "^3.2.19",
+        "laravel-echo": "^1.11.2",
+        "pusher-js": "^7.0.3",
         "vue": "^3.2.19"
     }
 }
